@@ -1,4 +1,5 @@
 # TODO - Create SQLAlchemy DB and Movie model
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 

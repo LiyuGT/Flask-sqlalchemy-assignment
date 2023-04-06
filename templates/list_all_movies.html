@@ -6,22 +6,21 @@
 <h1 class="mb-5">All Movies</h1>
 <p class="mb-3">See our list of movie ratings below</p>
 <table class="table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Director</th>
-      <th>Rating</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- TODO - Render movies in a table with a link on the title to the individual movie page -->
-    {% for movie in movies %}
-     <tr>
-       <td>{{ movie.title }}</a></td> <!--link????-->
-       <td>{{ movie.director }}</td>
-       <td>{{ movie.rating }}</td>
+  <th>
+      <tr>
+          <th>Title</th>
+          <th>Director</th>
+          <th>Rating</th>
       </tr>
-    {% endfor %}
+  </th>
+  <tbody>
+      {% for movie in movies %}
+          <tr>
+              <td>{{ movie.title }}</td>
+              <td>{{ movie.director }}</td>
+              <td>{{ movie.rating }}</td>
+          </tr>
+      {% endfor %}
   </tbody>
 </table>
 {% endblock %}

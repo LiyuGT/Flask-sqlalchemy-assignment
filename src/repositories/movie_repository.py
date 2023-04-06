@@ -3,7 +3,7 @@ from src.models import db
 
 class MovieRepository:
 
-    def get_all_movies(self, title) -> list[Movie]:
+    def get_all_movies(self) -> list[Movie]:
         # TODO get all movies from the DB
         movie: list[Movie]=Movie.query.all()
         return movie
